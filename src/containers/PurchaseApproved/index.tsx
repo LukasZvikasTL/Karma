@@ -29,7 +29,7 @@ const PurchaseReview: FC<{}> = props => {
       <Styled.PurchaseApprovedContent>
         <SuccessIcon size={100} />
         <div style={{ marginBottom: 50 }}></div>
-        <Heading size={40} headingTitle="Purchase Approved!" />
+        <Heading size={40} headingTitle="Credit Approved!" />
         <div
           style={{
             marginTop: 50,

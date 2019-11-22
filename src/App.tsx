@@ -9,7 +9,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <BrowserRouter>
-        {!window.location.pathname.includes("purchase_approved") && (
+        {!window.location.pathname.includes("approved") && (
           <Styled.NavigationWrapper>
             <Navigation />
           </Styled.NavigationWrapper>
@@ -17,10 +17,7 @@ const App: React.FC = () => {
         <Styled.ContentWrapper>
           <Switch>
             <Route path="/purchase_review" component={PurchaseReview}></Route>
-            <Route
-              path="/purchase_approved"
-              component={PurchaseApproved}
-            ></Route>
+            <Route path="/approved" component={PurchaseApproved}></Route>
           </Switch>
         </Styled.ContentWrapper>
       </BrowserRouter>
