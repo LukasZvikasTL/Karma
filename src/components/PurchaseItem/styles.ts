@@ -8,7 +8,7 @@ const PurchaseItem = styled.div`
 
 const PurhaseImage = styled.img`
   height: 190px;
-  width: 150px;
+  width: 135px;
   margin-right: 30px;
 `;
 
