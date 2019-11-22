@@ -82,7 +82,7 @@ const PurchaseReview: FC<{}> = props => {
               fontWeight: "bold",
               fontSize: 20
             }}
-            buttonTitle="Connect to the Bank"
+            buttonTitle="Connect to Your Bank"
           />
         </React.Fragment>
       )}
