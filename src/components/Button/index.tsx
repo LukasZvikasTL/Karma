@@ -5,8 +5,13 @@ const Button: FC<{
   buttonTitle: string;
   style?: any;
   color?: string;
+  onClick(): void;
 }> = props => (
-  <Styled.Button color={props.color} style={{ ...props.style }}>
+  <Styled.Button
+    onClick={() => props.onClick()}
+    color={props.color}
+    style={{ ...props.style }}
+  >
     {props.buttonTitle}
   </Styled.Button>
 );

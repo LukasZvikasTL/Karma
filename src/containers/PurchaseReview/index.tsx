@@ -79,6 +79,9 @@ const PurchaseReview: FC<{}> = props => {
               fontWeight: "bold",
               fontSize: 20
             }}
+            onClick={() =>
+              (location.href = `http://localhost:8080/data/${purchaseInfo.purchaseId}`)
+            }
             buttonTitle="Connect to the Bank"
           />
         </React.Fragment>
