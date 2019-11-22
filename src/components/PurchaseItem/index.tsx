@@ -18,7 +18,7 @@ const Purchaseitem: FC<{ purchaseItem: PurchaseItem }> = props => {
           <Styled.PurchaseItemContentItemHeading>
             Price
           </Styled.PurchaseItemContentItemHeading>
-          {props.purchaseItem.amount} {props.purchaseItem.currency}
+          {props.purchaseItem.amount / 100} {props.purchaseItem.currency}
         </Styled.PurchaseItemContentItem>
       </Styled.PurchaseItemContent>
     </Styled.PurchaseItem>
