@@ -15,7 +15,11 @@ const PurchaseReview: FC<{}> = props => {
     const fetchData = async () => {
       setLoading(true);
 
-      const result = await getPurchase("12345");
+      const urlParams = new URLSearchParams(window.location.search);
+
+      const purchaseId = urlParams.get("purchaseId");
+
+      const result = await getPurchase(purchaseId || "");
 
       setLoading(false);
       if (result && result.data) {
