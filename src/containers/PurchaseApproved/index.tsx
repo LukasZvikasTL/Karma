@@ -8,6 +8,10 @@ import Karma from "../../karmasign.png";
 import { Styled as HeaderItemStyles } from "../../components/Navigation/styles";
 
 const PurchaseReview: FC<{}> = props => {
+  const urlParams = new URLSearchParams(window.location.search);
+
+  const purchaseId = urlParams.get("purchaseId");
+
   return (
     <Styled.PurchaseApprovedWrapper>
       <div style={{ position: "absolute", top: 30, left: 60 }}>
@@ -53,6 +57,9 @@ const PurchaseReview: FC<{}> = props => {
             fontSize: 16
           }}
           buttonTitle="Go back to the Merchant"
+          onClick={() =>
+            (window.location.href = `http://localhost:3000/purchases?purchaseId=${purchaseId}`)
+          }
         />
       </Styled.PurchaseApprovedContent>
     </Styled.PurchaseApprovedWrapper>
