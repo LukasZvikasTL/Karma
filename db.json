@@ -1,0 +1,20 @@
+{
+  "createUser": [{ "userId": 123456 }],
+  "getPurchase*": {
+    "userId": "123456",
+    "purchaseId": "654321",
+    "status": "PAYED",
+    "duedate": "2019-11-22 16:00",
+    "creationDate": "2019-10-22 16:00",
+    "items": [
+      {
+        "itemId": "123456",
+        "itemDescription": "Nike Air Force 1 '07 Trainers In White, White UK 6",
+        "itemPictureUrl": "https://images.asos-media.com/products/nike-air-force-1-07-trainers-in-white/12257646-1-white?$l$",
+        "quantity": 1,
+        "amount": 80,
+        "currency": "GBP"
+      }
+    ]
+  }
+}
