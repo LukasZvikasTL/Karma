@@ -71,6 +71,9 @@ const PurchaseReview: FC<{}> = props => {
             </LegalInfoWrapper>
           </div>
           <Button
+            onClick={() =>
+              (window.location.href = `http://localhost:8080/data/${purchaseInfo.purchaseId}`)
+            }
             color="magenta"
             style={{
               marginTop: 20,
@@ -79,9 +82,6 @@ const PurchaseReview: FC<{}> = props => {
               fontWeight: "bold",
               fontSize: 20
             }}
-            onClick={() =>
-              (window.location.href = `http://localhost:8080/data/${purchaseInfo.purchaseId}`)
-            }
             buttonTitle="Connect to the Bank"
           />
         </React.Fragment>
