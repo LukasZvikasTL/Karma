@@ -9,7 +9,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <BrowserRouter>
-        {!window.location.pathname.includes("approved") && (
+        {!window.location.pathname.includes("APPROVED") && (
           <Styled.NavigationWrapper>
             <Navigation />
           </Styled.NavigationWrapper>
