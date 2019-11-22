@@ -80,7 +80,7 @@ const PurchaseReview: FC<{}> = props => {
               fontSize: 20
             }}
             onClick={() =>
-              (location.href = `http://localhost:8080/data/${purchaseInfo.purchaseId}`)
+              (window.location.href = `http://localhost:8080/data/${purchaseInfo.purchaseId}`)
             }
             buttonTitle="Connect to the Bank"
           />
